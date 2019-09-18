@@ -1,0 +1,1803 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC:700&display=swap&subset=cyrillic');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; 
+  background-repeat: no-repeat;
+  background-position: center center;
+  transition: background-color 0.1s ease-in-out, color 0.1s ease-in-out, border-color 0.1s ease-in-out; 
+} 
+
+main {
+  width: 100%;
+}
+
+li {
+  list-style-type: none;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: 'PT Sans', Arial, sans-serif;
+  font-weight: 400;
+  background-color: #F8F3F3;
+  color: #4E4141;
+}
+
+h1, h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 3.75rem;
+  line-height: 1.3;
+  letter-spacing: 3.75px;
+}
+
+h2 {
+  font-size: 2.25rem;
+  margin-top: 172px;
+  margin-bottom: 60px;
+}
+
+a {
+	color: #4E4141;
+	text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover {
+  opacity: 0.6;
+}
+
+.nav {
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  display: flex;
+  text-transform: uppercase;
+  background: rgba(248, 243, 243, 0.4);
+  height: 90px;
+}
+
+.hamb-menu {
+  display: none;
+}
+
+.logo {
+  width: 5.625rem;
+}
+
+.logo-name {
+  font-family: 'Amatic SC';
+  font-weight: bold;
+  font-size: 2.250rem;
+  letter-spacing: 0.18px;
+  line-height: 1;
+}
+
+.logo-descriptor {
+  font-weight: normal;
+  font-size: 0.625rem;
+}
+
+.menu-list {
+  justify-content: center;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 0.875rem;
+}
+
+.menu-list-item:nth-child(n+2)  {
+  margin-left: 2.813rem;
+}
+
+.accout {
+	display: flex;
+}
+
+.account-item:first-child{
+  margin-right: 1.063rem;
+}
+
+.account-link {
+  color: #045925;
+}
+
+.account-item-reg {
+  line-height: 0;
+  padding: 3px;
+  border: 1px solid #6DBD8B;
+  border-radius: 5px;
+}
+
+.account-item-reg:hover {
+  opacity: 1;
+  border: 1px solid #8ACAA3;
+  background-color: #8ACAA3;
+  transition: background-color 0.1s ease-in-out, color 0.1s ease-in-out, border-color 0.1s ease-in-out;
+}
+
+.reg-icon-container {
+  display: none;
+}
+
+/*ПЕРВЫЙ ЭКРАН*/
+
+.first {
+  width: 100%;
+  height: 616px;
+  margin-bottom: 150px;
+  background-image: url(../img/milk_bg1_1440.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #fff;
+  padding-top: 68px;
+  padding-bottom: 60px;
+}
+
+.subtitle {
+  margin-top: 10px;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 1.875rem;
+  text-align: center;
+  line-height: 1.3;
+  letter-spacing: 1.74px;
+}
+
+.headline-text {
+  font-size: 1.75rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 180px;
+  text-align: center;
+  width: 62%; 
+  line-height: 1.3;
+  min-width: 710px;
+}
+
+.social {
+  position: fixed;
+  right: 20px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 350;
+}
+
+.socials-item {
+  margin-bottom: 29px;
+}
+
+.socials-link {
+  opacity: 0.8;
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.socials-link-text {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+.action-button {
+  font-size: 1rem;
+  width: 216px;
+  padding: 22px;
+  text-align: center;
+  margin-top: 71px;
+  margin-left: auto;
+  margin-right: auto;
+  text-transform: uppercase;
+  border: 1px solid #6DBD8B;
+  border-radius: 5px;
+
+}
+
+.action-button:hover {
+  opacity: 1;
+  color: #4E4141;
+  border: 1px solid #8ACAA3;
+  cursor: pointer;
+  background-color: #8ACAA3;
+  transition: background-color 0.1s ease-in-out, color 0.1s ease-in-out, border-color 0.1s ease-in-out;
+}
+
+/*конец ПЕРВОГО БЛОКА*/
+
+
+/*блок О НАС*/
+
+.about-content {
+  width: 58rem;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+picture {
+   width: 60%;
+}
+
+.pic-about {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover; 
+}
+
+.text-about {
+  margin-left: 6%;
+  width: 28%;
+  font-size: 1.25rem;
+}
+
+.part-text-about:nth-child(n+2) {
+  margin-top: 35px;
+}
+
+.about-upper {
+  text-transform: uppercase;
+}
+
+/*конец блока О НАС*/
+
+
+
+/*блок ПРЕИМУЩЕСТВА*/
+
+.adv-list {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+}
+
+.adv-list-item {
+  width: 11.4rem;
+}
+
+.adv-list-item:first-child {
+  margin-left: 40%;
+  margin-right: 40%;
+}
+
+.adv-list-item:nth-child(2) {
+  margin-left: 19.9%;
+  margin-right: 25%;
+}
+
+.adv-list-item:nth-child(4) {
+  margin-left: auto;
+  margin-right: 23%;
+}
+.adv-list-item:nth-child(6) {
+  margin-left: 23%;
+  margin-right: auto;
+}
+
+.adv-pic-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.adv-pic {
+  width: 10.1rem;
+  border-radius: 10px;
+  
+}
+
+.adv-text {
+  text-align: center;
+  font-size: 1.25rem;
+}
+
+/*конец блока ПРЕИМУЩЕСТВА*/
+
+
+
+
+/*блок КАК ОФОРМИТЬ ПОДПИСКУ*/
+
+.how {
+  margin-top: 110px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.3);
+  padding-bottom: 71px;
+  
+}
+
+.how h2 {
+  padding-top: 54px;
+}
+
+.how-list {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  width: 80%;
+}
+
+.how-list_item {
+  width: 20%
+}
+
+.how-list_item:nth-child(n+2) {
+  margin-left: 10rem;
+}
+
+.how-list_item:nth-child(3) {
+  align-self: flex-start;
+  margin-top: 40px;
+}
+
+.how-list_item:nth-child(3) .how-text {
+  margin-top: 25px;
+} 
+
+.how-text {
+  width: 16rem;
+  font-weight: bold;
+  font-size: 1.42rem;
+  text-align: center;
+}
+
+/*конец блока КАК ОФОРМИТЬ ПОДПИСКУ*/
+
+
+
+/*блок ОПЛАТА И ДОСТАВКА*/
+
+.delivery-pay {
+  width: 50.18rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.delivery, .payment {
+  font-size: 1.87rem;
+  display: flex;
+  align-items: center;
+}
+
+.delivery {
+  margin-bottom: 60px;
+}
+
+.delivery-pic {
+  width: 20.4rem;
+  height: 228px;
+  border-radius: 10px;
+  opacity: 0.7;
+}
+
+.delivery-text {
+  margin-left: 2.56rem;
+}
+
+.payment-text {
+  margin-right: 2.8rem;
+}
+
+.highligh-account {
+  color: #008F37;
+}
+
+/*конец блока ДОСТАВКА И ОПЛАТА*/
+
+
+/*блок КАЧЕСТВО*/
+
+.quality{
+  margin-top: 137px;
+  width: 100%;
+  height: 530px;
+  background-image: url(../img/quality.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #fff;
+  padding-bottom: 78px;
+  position: relative;
+  
+}
+
+.quality::after {
+  content: "";
+  background: rgba(248, 243, 243, 0.7);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+
+
+.quality h2 {
+  padding-top: 52px;
+  position: relative;
+  z-index: 2;
+}
+
+.quality-text {
+  margin-left: auto;
+  margin-right: auto;
+  width: 39%;
+  text-align: center;
+  font-size: 1.5rem;
+  position: relative;
+  z-index: 2;
+}
+
+.quality-text-part:nth-child(2) {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+
+}
+
+.quality-text-part:nth-child(n+2) {
+  margin-top: 32px;
+}
+ /*конец блока КАЧЕСТВО*/
+
+
+ /*блок ЧАСТЫЕ ВОПРОСЫ*/
+
+.faq-item {
+  margin-left: auto;
+  margin-right: auto;
+  width: 55%;
+  background-color: rgba(255, 255, 255, 0.27);
+  padding-left: 2.25rem;
+  padding-top: 1.875rem;
+  padding-bottom: 1.68rem;
+  border: rgba(112, 112, 112, 0.1) solid 1px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.faq-item:nth-child(n+2) {
+  margin-top: 19px;
+}
+
+.faq-item:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.question {
+  text-align: left;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center ;
+  position: relative;
+}
+
+.question:hover {
+  opacity: 0.8;
+}
+
+.question::after {
+  content: "";
+  position: absolute;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../img/arrow_down.svg);
+  opacity: 0.3;
+  width: 22px;
+  height: 12px;
+  right: 35px;
+}
+
+ /*конец блока ЧАСТЫЕ ВОПРОСЫ*/
+
+
+ /*блок СВЯЗАТЬСЯ С НАМИ*/
+
+.contact {
+  background-color: rgba(255, 255, 255, 0.3);
+  margin-top: 170px;
+}
+
+.contact h2 {
+  padding-top: 54px;
+}
+
+.contact-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45.3%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 170px;
+}
+
+.contact-items {
+  display: flex;
+}
+
+.contact-item:nth-child(n+2) {
+  margin-left: 9.3rem;
+}
+
+
+.contact-link {
+  display: block;
+  width: 40px;
+  height: 38px;
+  background-repeat: no-repeat;
+  background-size: 50px;
+  opacity: 0.7;
+}
+
+/*конец блока  СВЯЗАТЬСЯ С НАМИ*/
+
+
+/* блок ПРИЛОЖЕНИЯ */
+
+.apps {
+  display: flex;
+  position: relative;
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 2.125rem;
+  text-align: center;
+}
+
+.mockup {
+  width: 25%;
+  margin-left: 24.3%;
+}
+
+.apps-container {
+  margin-top: 164px;
+  margin-left: 4.5rem;
+  text-align: center;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+
+.apps-text {
+  font-size: 1.875rem;
+  width: 63%;
+  margin-top: 42px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn-apps {
+  margin-top: 74px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-apps-link {
+  position: relative;
+  width: 13.5rem;
+  height: 4rem;
+}
+
+.btn-apps-link:nth-child(2) {
+  margin-left: 10%;
+}
+
+.btn-apps-apple {
+   background-image: url(../img/apple_store.svg);
+}
+
+.btn-apps-google {
+  background-image: url(../img/google_play.svg);
+}
+
+.btn-apps-text {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+/*конец блока ПРИЛОЖЕНИЯ*/
+
+
+
+/*блок ПАРТНЕРЫ*/
+
+.partners {
+  margin-bottom: 163px;
+}
+
+.partners-text {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 42.8%;
+  font-size: 1.875rem;
+}
+
+/*конец блока ПАРТНЕРЫ*/
+
+
+/*footer*/
+
+.footer {
+  width: 100%;
+  height: 376px;
+  background-image: url(../img/footer_bg_1440.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #fff;
+  position: relative;
+  text-transform: uppercase;
+  padding-top: 44px;
+}
+
+.footer::after {
+  content: "";
+  background: rgba(248, 243, 243, 0.5);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.footer-content {
+  display: flex;
+  align-items: flex-start;
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+.footer-links {
+  width: 9%;
+  position: relative;
+  z-index: 2;
+}
+
+.footer-logo-container {
+  width: 5.625rem
+}
+
+.footer-menu {
+  position: relative;
+  z-index: 2;
+}
+
+.footer-menu-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-socials-items {
+  margin-top: 13px;
+  display: flex;
+  opacity: 0.7;
+}
+
+.footer-socials-item:nth-child(n+2) {
+  margin-left: 14px;
+  
+}
+
+.footer-link svg {
+  width: 20px;
+  height: 20px;
+}
+
+.footer-contact-items {
+  margin-top: 7px;
+  display: flex;
+  align-items: center;
+}
+
+.footer-contact-item {
+  opacity: 0.7;
+}
+
+.footer-contact-item:nth-child(2) {
+  margin-left: 22px;
+}
+
+.icon-contact {
+  width: 35px;
+  height: 35px;
+}
+
+.footer-apps {
+  margin-top: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-apps-link {
+  position: relative;
+  width: 100%;
+  height: 1.625rem;
+  background-size: 6rem 1.625rem;
+}
+
+.footer-apps-link:nth-child(2) {
+  margin-top: 9px;
+}
+
+
+.footer-menu {
+  margin-left: 10%;
+  font-weight: bold;
+  font-size: 0.875rem;
+}
+
+.footer-menu-item {
+  margin-bottom: 21px;
+}
+
+.copyright {
+  position: relative;
+  z-index: 2;
+  width: 12%;
+  min-width: 176px;
+  margin-top: 56px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  opacity: 0.7;
+}
+
+/*конец footer*/
+
+
+
+
+@media (min-width: 961px) and  (max-width: 1180px) {
+  
+  /*блок ПРЕИМУЩЕСТВА*/
+
+  .adv-list {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+  }
+
+  .adv-list .adv-list-item {
+    width: 11.4rem;
+    margin-left: 1%;
+    margin-right: 5%;
+    margin-bottom: 30px;
+  }
+
+  .adv-pic {
+    width: 10.1rem;
+    border-radius: 10px;
+  }
+
+  .adv-text {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 1.25rem;
+  }
+
+  /*конец блока ПРЕИМУЩЕСТВА*/
+
+
+  /*блок КАК ОФОРМИТЬ ПОДПИСКУ*/
+
+  .how-list {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    width: 90%;
+  }
+
+  .how-list_item {
+    width: 20%
+  }
+
+  .how-list_item:nth-child(n+2) {
+    margin-left: 13%;
+  }
+
+  .how-pic {
+    width: 12rem;
+  }
+
+  .how-text {
+    width: 16rem;
+    font-weight: bold;
+    font-size: 1.25rem;
+    text-align: center;
+  }
+
+  /*конец блока КАК ОФОРМИТЬ ПОДПИСКУ*/
+
+  /* блок ПРИЛОЖЕНИЯ */
+
+  h3 {
+    font-size: 1.875rem;
+  }
+  
+  .apps-container {
+    top: 60px;
+    right: 15%;
+    font-size: 1.25rem;
+  }
+
+  .apps-text {
+    font-size: 1.25rem;
+    width: 63%;
+    margin-top: 42px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .btn-apps {
+    margin-top: 60px;
+    display: flex;
+  }
+
+  .btn-apps-link {
+    position: relative;
+    width: 13.5rem;
+    height: 4rem;
+  }
+
+  .btn-apps-link:nth-child(2) {
+    margin-left: 5%;
+  }
+
+/*конец блока ПРИЛОЖЕНИЯ*/
+
+}
+
+@media (min-width: 641px) and  (max-width: 960px) {
+
+  html {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 3.8rem;
+    letter-spacing: 3.13px; 
+  }
+
+  h2 {
+    font-size: 2.14rem;
+    margin-top: 100px;
+    margin-bottom: 40px;
+  }
+
+  .nav {
+    max-width: 727px;
+    height: 97px;
+    justify-content: space-between;
+  }
+
+  .hamb-menu {
+    display: block;
+    width: 24%;
+  }
+
+  .logo {
+    width: 6.3rem;
+  }
+
+  .logo-name {
+    font-size: 2.57rem;
+  }
+
+  .logo-descriptor {
+    font-size: 0.7rem;
+  }
+
+  .menu-list {
+    display: none;
+  }
+
+  .accout {
+    font-size: 1.28rem;
+  }
+
+  .account-item-reg {
+    border: none;
+  }
+
+
+/*ПЕРВЫЙ ЭКРАН*/
+
+  .first {
+    background-image: url(../img/milk_bg1_834.png);
+    height: 556px;
+  } 
+
+  .subtitle {
+    margin-top: 5px;
+    font-size: 1.85rem;
+    letter-spacing: 1px;
+    line-height: 1.2;
+  }
+
+  .headline-text {
+    font-size: 1.7rem;
+    width: 95%;
+    min-width: 607px;
+  }
+
+  .socials-link {
+    width: 30px;
+    height: 30px;
+  } 
+
+/*конец ПЕРВОГО ЭКРАНА*/
+
+  /*блок О НАС*/
+
+  .about-content {
+    width: 82%;
+  }
+
+  .pic-about {
+    width: 94%;
+  }
+
+  .text-about {
+    margin-left: 5%;
+    width: 37.8%;
+    font-size: 1.14rem;
+  }
+
+  .part-text-about:nth-child(n+2) {
+    margin-top: 13px;
+  }
+
+  /*конец блока О НАС*/
+
+
+  /*блок ПРЕИМУЩЕСТВА*/
+
+  .adv-list {
+    width: 80%;
+  }
+
+  .adv-list .adv-list-item {
+    width: 25%;
+    margin-left: 3%;
+    margin-right: 5%;
+    margin-bottom: 46px;
+  }
+
+  .adv-pic {
+    width: 7rem;
+  }
+
+  .adv-text {
+    margin-top: 17px;
+    font-size: 1.14rem;
+  }
+
+/*конец блока ПРЕИМУЩЕСТВА*/
+
+
+/*блок КАК ОФОРМИТЬ ПОДПИСКУ*/
+
+  .how {
+    margin-top: 17px;
+    width: 100%;
+    padding-bottom: 71px;
+  }
+
+  .how h2 {
+    margin-top: 0;
+    padding-top: 17px;
+  }
+
+  .how-list {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+  }
+
+  .how-list_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .how-list_item:nth-child(n+2) {
+    margin-left: 0;
+    margin-top: 54px;
+  }
+
+  .how-list_item:nth-child(3) {
+    align-self: flex-start;
+    margin-top: 40px;
+  }
+
+  .how-list_item:nth-child(2) {
+    margin-top: 40px;
+  } 
+
+  .how-list_item:nth-child(3) .how-text {
+    margin-top: 22px;
+  } 
+
+  .how-pic {
+    width: 12rem;
+  }
+
+  .how-text {
+    width: 22rem;
+    font-weight: bold;
+    font-size: 1.4rem;
+    text-align: center;
+    margin-top: 22px;
+}
+
+/*конец блока КАК ОФОРМИТЬ ПОДПИСКУ*/
+
+
+/*блок ОПЛАТА И ДОСТАВКА*/
+
+  .delivery-pay {
+    width: 75.6%; 
+  }
+
+  .delivery, .payment {
+    font-size: 1.4rem;
+    line-height: 2;
+  }
+
+  .delivery {
+    margin-bottom: 37px;
+  }
+
+  .delivery-pic {
+    width: 17.2rem;
+    height: 168px;
+  }
+
+  .delivery-text {
+    margin-left: 1.7rem;
+  }
+
+  .payment-text {
+    margin-right: 1rem;
+  }
+
+/*конец блока ДОСТАВКА И ОПЛАТА*/
+
+
+/*блок КАЧЕСТВО*/
+
+  .quality{
+    margin-top: 96px;
+    width: 100%;
+    height: 427px;
+  }
+
+  .quality h2 {
+    padding-top: 33px;
+  }
+
+  .quality-text {
+    margin-left: auto;
+    margin-right: auto;
+    width: 47%;
+    font-size: 1.4rem;
+  }
+
+  .quality-text-part:nth-child(2) {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+
+  .quality-text-part:nth-child(n+2) {
+    margin-top: 34px;
+  }
+
+ /*конец блока КАЧЕСТВО*/
+
+
+ /*блок ЧАСТЫЕ ВОПРОСЫ*/
+
+  .faq-item {
+    width: 71%;
+    padding-left: 2.25rem;
+    padding-top: 1.875rem;
+    padding-bottom: 1.68rem;
+  }
+
+  .faq-item:nth-child(n+2) {
+    margin-top: 19px;
+  }
+
+  .question {
+    font-size: 1.4rem;
+  }
+
+ /*конец блока ЧАСТЫЕ ВОПРОСЫ*/
+
+
+ /*блок СВЯЗАТЬСЯ С НАМИ*/
+
+  .contact {
+    margin-top: 49px;
+    padding-bottom: 0;
+  }
+
+  .contact h2 {
+    padding-top: 51px;
+    margin-bottom: 66px;
+  }
+
+  .contact-container {
+    width: 45.3%;
+    padding-bottom: 153px;
+  }
+
+  .contact-item:nth-child(n+2) {
+    margin-left: 10.6rem;
+  }
+
+/*конец блока  СВЯЗАТЬСЯ С НАМИ*/
+
+
+/* блок ПРИЛОЖЕНИЯ */
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  .apps-container {
+    width: 33.8%;
+    top: 70px;
+    right: 20.6%;
+  }
+
+  .apps-text {
+    font-size: 1.7rem;
+    width: 100%;
+    margin-top: 25px;
+  }
+
+  .btn-apps {
+    margin-top: 34px;
+  }
+
+/*конец блока ПРИЛОЖЕНИЯ*/
+
+
+/*блок ПАРТНЕРЫ*/
+
+  .partners {
+    margin-bottom: 100px;
+  }
+
+  .partners-text {
+    width: 66.6%;
+    font-size: 1.7rem;
+  }
+
+/*конец блока ПАРТНЕРЫ*/
+
+
+/*footer*/
+
+  .footer {
+    width: 100%;
+    height: 370px;
+    background-image: url(../img/footer_bg_834.png);
+    padding-top: 44px;
+  }
+
+  .footer-content {
+    max-width: 789px;
+  }
+
+  .footer-links {
+    width: 10%;
+  }
+
+  .footer-logo-container {
+    width: 6.4rem;
+  }
+
+  .footer-socials-items {
+    display: none;
+  }
+
+  .footer-contact-items {
+    margin-top: 7px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-contact-item {
+    opacity: 0.7;
+  }
+
+  .footer-contact-item:nth-child(2) {
+    margin-top: 15px;
+    margin-left: 0;
+  }
+
+  .icon-contact {
+    width: 40px;
+    height: 40px;
+  }
+
+  .footer-apps {
+    margin-top: 31px;
+  }
+
+  .footer-apps-link:nth-child(2) {
+    margin-top: 20px;
+  }
+
+
+  .footer-menu {
+    margin-left: 6%;
+  }
+
+  .footer-menu-item {
+    margin-bottom: 21px;
+  }
+
+  .copyright {
+    width: 12%;
+    min-width: 176px;
+    margin-top: 30px;
+    font-size: 1.4rem;
+  }
+
+/*конец footer*/
+
+}
+
+
+@media (min-width: 320px) and  (max-width: 640px) {
+  
+  html {
+    font-size: 12px;
+  }  
+
+  h1 {
+    font-size: 2rem;
+    line-height: 1.3;
+    letter-spacing: 0.48px;
+  }
+
+  h2 {
+    font-size: 1.66rem;
+    margin-top: 40px;
+    margin-bottom: 14px;
+  }
+
+  .nav {
+    max-width: 270px;
+    height: 67px;
+    justify-content: space-between;
+  }
+
+  .hamb-menu {
+    display: block;
+    width: 14%;
+  }
+
+  .hamb-menu-icon {
+    width: 29px;
+    height: 29px;
+  }
+
+  .logo {
+    width: 5.25rem;
+  }
+
+  .logo-name {
+    font-size: 2.1rem;
+  }
+
+  .logo-descriptor {
+    font-size: 0.58rem;
+  }
+
+  .menu-list {
+    display: none;
+  }
+
+  .accout {
+    display: none;
+  }
+
+  .reg-icon-container {
+    display: block;
+  }
+
+  .reg-icon {
+    width: 29px;
+    height: 29px;
+  }
+
+/*ПЕРВЫЙ ЭКРАН*/
+
+  .first {
+    background-image: url(../img/milk_bg1_320.png);
+    height: 213px;
+    margin-bottom: 0px;
+    padding-top: 19px;
+    padding-bottom: 13px;
+  }
+
+  .subtitle {
+    margin-top: 2px;
+    font-size: 1rem;
+    line-height: 1.3;
+    letter-spacing: 0.36px;
+  }
+
+  .headline-text {
+    font-size: 0.83rem;
+    margin-top: 21px;
+    width: 78.4%; 
+    line-height: 1;
+    min-width: 251px;
+  }
+
+  .action-button {
+    font-size: 1rem;
+    width: 150px;
+    padding: 12px 9px;
+    margin-top: 53px;
+  }
+
+  .social {
+    display: none;
+  }
+
+/*конец ПЕРВОГО ЭКРАНА*/
+
+/*блок О НАС*/
+
+  .about-content {
+    width: 14.3rem;
+  }
+
+  .pic-about {
+    display: none; 
+  }
+
+  picture {
+    width: 0;
+  }
+
+  .text-about {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  .part-text-about:nth-child(n+2) {
+    margin-top: 19px;
+    margin-right: 9px;
+    margin-left: 3px;
+  }
+
+/*конец блока О НАС*/
+
+
+/*блок ПРЕИМУЩЕСТВА*/
+
+  .adv-list {
+    width: 45.6%;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .adv-list .adv-list-item {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 17px;
+  }
+
+  .adv-pic {
+    width: 7rem;
+  }
+
+  .adv-text {
+    margin-top: 17px;
+    font-size: 1.3rem;
+  }
+
+/*конец блока ПРЕИМУЩЕСТВА*/
+
+
+/*блок КАК ОФОРМИТЬ ПОДПИСКУ*/
+
+  .how {
+    margin-top: 17px;
+    width: 100%;
+    padding-bottom: 19px; 
+}
+
+  .how h2 {
+    margin-top: 0;
+    padding-top: 17px;
+  }
+
+  .how-list {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+  }
+
+  .how-list_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .how-list_item:nth-child(n+2) {
+    margin-left: 0;
+    margin-top: 54px;
+  }
+
+  .how-list_item:nth-child(3) {
+    align-self: flex-start;
+    margin-top: 40px;
+  }
+
+  .how-list_item:nth-child(2) {
+    margin-top: 40px;
+  } 
+
+.how-list_item:nth-child(3) .how-text {
+    margin-top: 22px;
+  } 
+
+.how-pic {
+    width: 8rem;
+  }
+
+.how-text {
+  width: 15rem;
+  font-weight: bold;
+  font-size: 1.16rem;
+  text-align: center;
+  margin-top: 22px;
+}
+
+/*конец блока КАК ОФОРМИТЬ ПОДПИСКУ*/
+
+
+/*блок ОПЛАТА И ДОСТАВКА*/
+
+  .delivery-pay {
+    width: 62.5%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .delivery, .payment {
+    font-size: 1.4rem;
+    line-height: 2;
+  }
+
+  .delivery {
+    margin-bottom: 37px;
+  }
+
+  .delivery-pic {
+    display: none;
+  }
+
+  .delivery-text, .payment-text {
+    font-size: 1.16rem;
+    line-height: 1.42;
+    text-align: center;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+
+  .highligh-account {
+    font-size: 1.33rem;
+  }
+
+/*конец блока ОПЛАТА И ДОСТАВКА*/
+
+
+/*блок КАЧЕСТВО*/
+
+  .quality{
+    margin-top: 32px;
+    width: 100%;
+    height: 257px;
+    background-image: url(../img/quality_320.png);
+    padding-bottom: 41px;
+    position: relative;
+  }
+
+  .quality h2 {
+    padding-top: 10px;
+  }
+
+  .quality-text {
+    width: 78%;
+    font-size: 1.16rem;
+  }
+
+  .quality-text-part:nth-child(2) {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+
+  .quality-text-part:nth-child(n+2) {
+    margin-top: 20px;
+  }
+
+ /*конец блока КАЧЕСТВО*/
+
+
+ /*блок ЧАСТЫЕ ВОПРОСЫ*/
+
+  .faq-item {
+    width: 84.3%;
+    padding-left: 1.08rem;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+  }
+
+  .faq-item:nth-child(n+2) {
+    margin-top: 19px;
+  }
+
+  .question {
+    font-size: 1rem;
+  }
+
+  .question::after {
+    width: 13px;
+    height: 8px;
+    right: 12.5px;
+  }
+
+ /*конец блока ЧАСТЫЕ ВОПРОСЫ*/
+
+ /*блок СВЯЗАТЬСЯ С НАМИ*/
+
+  .contact {
+    margin-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  .contact h2 {
+    padding-top: 34px;
+  }
+
+  .contact-container {
+    padding-bottom: 24px;
+  }
+
+  .contact-items {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .contact-item:nth-child(1), .contact-item:nth-child(3) {
+    margin-left: 0;
+    margin-bottom: 63.2px;
+  }
+
+  .contact-item:nth-child(2), .contact-item:nth-child(4) {
+    margin-left: 50%;
+  }
+
+  .contact-item {
+    width: 20%;
+  }
+
+/*конец блока  СВЯЗАТЬСЯ С НАМИ*/
+
+
+/* блок ПРИЛОЖЕНИЯ */
+  .apps {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 84px;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  .mockup {
+    width: 53.25%;
+  }
+
+  .apps-container {
+    text-align: center;
+    margin-top: -50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .apps-text {
+    font-size: 1.16rem;
+    width: 63%;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .btn-apps {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 16px;
+    display: flex;
+  }
+
+  .btn-apps-link {
+    width: 10.5rem;
+    height: 4rem;
+  }
+
+  .btn-apps-link:nth-child(2) {
+    margin-left: 10%;
+  }
+
+/*конец блока ПРИЛОЖЕНИЯ*/
+
+
+/*блок ПАРТНЕРЫ*/
+
+  .partners {
+    margin-bottom: 28px;
+  }
+
+  .partners-text {
+    width: 66.6%;
+    font-size: 1.16rem;
+  }
+
+/*конец блока ПАРТНЕРЫ*/
+
+/*footer*/
+
+  .footer {
+    width: 100%;
+    height: 403px;
+    background-image: url(../img/footer_bg_320.png);
+    padding-top: 27px;
+    text-align: center;
+  }
+
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 270px;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+  .footer-links {
+    width: 80%;
+    margin-bottom: 22px;
+  }
+
+  .footer-logo-container {
+    display: none;
+  }
+
+  .footer-socials-items {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 13px;
+    display: flex;
+    justify-content: space-between;
+    opacity: 0.7;
+  }
+
+  .footer-link svg {
+    width: 37px;
+    height: 37px;
+  }
+
+  .footer-contact-items {
+    display: none;
+  }
+
+  .footer-apps {
+    margin-top: 22px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .footer-apps-link {
+    width: 100%;
+    height: 4rem;
+    background-size: 7rem 4rem;
+  }
+
+  .footer-apps-link:nth-child(2) {
+    margin-top: 0px;
+    margin-left: 20%;
+  }
+ 
+  .footer-menu {
+    margin-top: 0;
+    margin-left: 0;
+    font-size: 1.3rem;
+  }
+
+  .footer-menu-item {
+    margin-bottom: 21px;
+  }
+
+  .footer-menu-item:nth-child(n+2) {
+    display: none;
+  }
+
+  .copyright {
+    width: 12%;
+    min-width: 176px;
+    margin-top: 56px;
+    font-size: 1.25rem;
+ }
+ /*конец footer*/
+}
+
+
+
+
