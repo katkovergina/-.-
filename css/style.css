@@ -28,12 +28,15 @@ body {
   font-weight: 400;
   background-color: #F8F3F3;
   color: #4E4141;
+  min-width: 320px;
 }
 
 h1, h2 {
   text-align: center;
   text-transform: uppercase;
   font-weight: bold;
+  position: relative;
+  z-index: 999;
 }
 
 h1 {
@@ -44,7 +47,6 @@ h1 {
 
 h2 {
   font-size: 2.25rem;
-  margin-top: 172px;
   margin-bottom: 60px;
 }
 
@@ -56,6 +58,14 @@ a {
 
 a:hover {
   opacity: 0.6;
+}
+
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
 }
 
 .nav {
@@ -75,6 +85,10 @@ a:hover {
 
 .logo {
   width: 5.625rem;
+}
+
+.logo-link-container{
+  display: block;
 }
 
 .logo-name {
@@ -136,8 +150,7 @@ a:hover {
 
 .first {
   width: 100%;
-  height: 616px;
-  margin-bottom: 150px;
+  /*margin-bottom: 150px;*/
   background-image: url(../img/milk_bg1_1440.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -146,8 +159,13 @@ a:hover {
   padding-bottom: 60px;
 }
 
+.headline {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
 .subtitle {
-  margin-top: 10px;
   text-transform: uppercase;
   font-weight: normal;
   font-size: 1.875rem;
@@ -177,8 +195,8 @@ a:hover {
   z-index: 350;
 }
 
-.socials-item {
-  margin-bottom: 29px;
+.socials-item:nth-child(n+2) {
+  margin-top: 29px;
 }
 
 .socials-link {
@@ -197,18 +215,21 @@ a:hover {
   clip: rect(1px, 1px, 1px, 1px);
 }
 
-.action-button {
-  font-size: 1rem;
-  width: 216px;
-  padding: 22px;
-  text-align: center;
+.action-button-container {
+  display: flex;
+  justify-content: center;
   margin-top: 71px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.action-button {
+  font-size: 1rem;
+  padding: 22px;
+  text-align: center;
   text-transform: uppercase;
   border: 1px solid #6DBD8B;
   border-radius: 5px;
-
 }
 
 .action-button:hover {
@@ -224,6 +245,11 @@ a:hover {
 
 
 /*блок О НАС*/
+
+.about { 
+  padding-top: 150px;
+  padding-bottom: 172px;
+}
 
 .about-content {
   width: 58rem;
@@ -261,6 +287,10 @@ picture {
 
 
 /*блок ПРЕИМУЩЕСТВА*/
+
+.advantages {
+  padding-bottom: 172px
+}
 
 .adv-list {
   margin-left: auto;
@@ -319,14 +349,9 @@ picture {
 /*блок КАК ОФОРМИТЬ ПОДПИСКУ*/
 
 .how {
-  margin-top: 110px;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.3);
-  padding-bottom: 71px;
-  
-}
-
-.how h2 {
+  padding-bottom: 172px;
   padding-top: 54px;
 }
 
@@ -372,6 +397,8 @@ picture {
   width: 50.18rem;
   margin-left: auto;
   margin-right: auto;
+  padding-bottom: 172px;
+  padding-top: 54px;
 }
 
 .delivery, .payment {
@@ -409,16 +436,15 @@ picture {
 /*блок КАЧЕСТВО*/
 
 .quality{
-  margin-top: 137px;
   width: 100%;
-  height: 530px;
   background-image: url(../img/quality.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #fff;
   padding-bottom: 78px;
   position: relative;
-  
+  margin-bottom: 172px;
+  padding-top: 54px;;
 }
 
 .quality::after {
@@ -429,14 +455,6 @@ picture {
   height: 100%;
   top: 0;
   left: 0;
-}
-
-
-
-.quality h2 {
-  padding-top: 52px;
-  position: relative;
-  z-index: 2;
 }
 
 .quality-text {
@@ -463,6 +481,10 @@ picture {
 
 
  /*блок ЧАСТЫЕ ВОПРОСЫ*/
+
+.faq {
+  padding-bottom: 172px;
+}
 
 .faq-item {
   margin-left: auto;
@@ -516,18 +538,12 @@ picture {
 
 .contact {
   background-color: rgba(255, 255, 255, 0.3);
-  margin-top: 170px;
-}
-
-.contact h2 {
   padding-top: 54px;
 }
 
 .contact-container {
   display: flex;
-  align-items: center;
   justify-content: center;
-  width: 45.3%;
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 170px;
@@ -535,12 +551,9 @@ picture {
 
 .contact-items {
   display: flex;
+  justify-content: space-around;
+  width: 45%;
 }
-
-.contact-item:nth-child(n+2) {
-  margin-left: 9.3rem;
-}
-
 
 .contact-link {
   display: block;
@@ -569,7 +582,7 @@ h3 {
 
 .mockup {
   width: 25%;
-  margin-left: 24.3%;
+  margin-left: 20%;
 }
 
 .apps-container {
@@ -645,7 +658,6 @@ h3 {
 
 .footer {
   width: 100%;
-  height: 376px;
   background-image: url(../img/footer_bg_1440.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -653,6 +665,7 @@ h3 {
   position: relative;
   text-transform: uppercase;
   padding-top: 44px;
+  padding-bottom: 26px;
 }
 
 .footer::after {
@@ -754,8 +767,8 @@ h3 {
   font-size: 0.875rem;
 }
 
-.footer-menu-item {
-  margin-bottom: 21px;
+.footer-menu-item:nth-child(n+2) {
+  margin-top: 21px;
 }
 
 .copyright {
@@ -775,9 +788,7 @@ h3 {
 /*конец footer*/
 
 
-
-
-@media (min-width: 961px) and  (max-width: 1180px) {
+@media (min-width: 961px) and  (max-width: 1300px) {
   
   /*блок ПРЕИМУЩЕСТВА*/
 
@@ -880,6 +891,7 @@ h3 {
 
 }
 
+
 @media (min-width: 641px) and  (max-width: 960px) {
 
   html {
@@ -893,7 +905,6 @@ h3 {
 
   h2 {
     font-size: 2.14rem;
-    margin-top: 100px;
     margin-bottom: 40px;
   }
 
@@ -937,7 +948,6 @@ h3 {
 
   .first {
     background-image: url(../img/milk_bg1_834.png);
-    height: 556px;
   } 
 
   .subtitle {
@@ -962,6 +972,11 @@ h3 {
 
   /*блок О НАС*/
 
+  .about {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
   .about-content {
     width: 82%;
   }
@@ -984,6 +999,10 @@ h3 {
 
 
   /*блок ПРЕИМУЩЕСТВА*/
+
+  .advantages {
+    padding-bottom: 100px;
+  }
 
   .adv-list {
     width: 80%;
@@ -1016,11 +1035,6 @@ h3 {
     padding-bottom: 71px;
   }
 
-  .how h2 {
-    margin-top: 0;
-    padding-top: 17px;
-  }
-
   .how-list {
     margin-left: auto;
     margin-right: auto;
@@ -1028,6 +1042,7 @@ h3 {
     flex-direction: column;
     align-items: center;
     width: 20%;
+    min-width: 200px;
   }
 
   .how-list_item {
@@ -1074,6 +1089,8 @@ h3 {
 
   .delivery-pay {
     width: 75.6%; 
+    padding-bottom: 0;
+    margin-bottom: 100px;
   }
 
   .delivery, .payment {
@@ -1106,11 +1123,8 @@ h3 {
   .quality{
     margin-top: 96px;
     width: 100%;
-    height: 427px;
-  }
-
-  .quality h2 {
-    padding-top: 33px;
+    padding-bottom: 55px;
+    margin-bottom: 100px;
   }
 
   .quality-text {
@@ -1134,6 +1148,10 @@ h3 {
 
 
  /*блок ЧАСТЫЕ ВОПРОСЫ*/
+  .faq {
+    padding-bottom: 100px;
+  }
+
 
   .faq-item {
     width: 71%;
@@ -1160,18 +1178,8 @@ h3 {
     padding-bottom: 0;
   }
 
-  .contact h2 {
-    padding-top: 51px;
-    margin-bottom: 66px;
-  }
-
   .contact-container {
-    width: 45.3%;
-    padding-bottom: 153px;
-  }
-
-  .contact-item:nth-child(n+2) {
-    margin-left: 10.6rem;
+    padding-bottom: 100px;
   }
 
 /*конец блока  СВЯЗАТЬСЯ С НАМИ*/
@@ -1185,8 +1193,8 @@ h3 {
 
   .apps-container {
     width: 33.8%;
-    top: 70px;
-    right: 20.6%;
+    margin-top: 70px;
+    margin-right: 20.6%;
   }
 
   .apps-text {
@@ -1220,9 +1228,9 @@ h3 {
 
   .footer {
     width: 100%;
-    height: 370px;
     background-image: url(../img/footer_bg_834.png);
     padding-top: 44px;
+    padding-bottom: 16px;
   }
 
   .footer-content {
@@ -1274,8 +1282,8 @@ h3 {
     margin-left: 6%;
   }
 
-  .footer-menu-item {
-    margin-bottom: 21px;
+  .footer-menu-item:nth-child(n+2) {
+    margin-top: 21px;
   }
 
   .copyright {
@@ -1304,12 +1312,11 @@ h3 {
 
   h2 {
     font-size: 1.66rem;
-    margin-top: 40px;
     margin-bottom: 14px;
   }
 
   .nav {
-    max-width: 270px;
+    max-width: 500px;
     height: 67px;
     justify-content: space-between;
   }
@@ -1357,8 +1364,6 @@ h3 {
 
   .first {
     background-image: url(../img/milk_bg1_320.png);
-    height: 213px;
-    margin-bottom: 0px;
     padding-top: 19px;
     padding-bottom: 13px;
   }
@@ -1377,12 +1382,16 @@ h3 {
     line-height: 1;
     min-width: 251px;
   }
+  
+  .action-button-container {
+    margin-top: 53px;
+  }  
 
   .action-button {
     font-size: 1rem;
     width: 150px;
     padding: 12px 9px;
-    margin-top: 53px;
+    
   }
 
   .social {
@@ -1392,6 +1401,11 @@ h3 {
 /*конец ПЕРВОГО ЭКРАНА*/
 
 /*блок О НАС*/
+
+  .about {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
 
   .about-content {
     width: 14.3rem;
@@ -1423,6 +1437,10 @@ h3 {
 
 
 /*блок ПРЕИМУЩЕСТВА*/
+  
+  .advantages {
+    padding-bottom: 40px;
+  }
 
   .adv-list {
     width: 45.6%;
@@ -1453,14 +1471,8 @@ h3 {
 /*блок КАК ОФОРМИТЬ ПОДПИСКУ*/
 
   .how {
-    margin-top: 17px;
     width: 100%;
     padding-bottom: 19px; 
-}
-
-  .how h2 {
-    margin-top: 0;
-    padding-top: 17px;
   }
 
   .how-list {
@@ -1469,6 +1481,7 @@ h3 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    min-width: 103px;
     width: 20%;
   }
 
@@ -1518,6 +1531,7 @@ h3 {
     width: 62.5%;
     margin-right: auto;
     margin-left: auto;
+    padding-bottom: 40px;
   }
 
   .delivery, .payment {
@@ -1553,16 +1567,12 @@ h3 {
 /*блок КАЧЕСТВО*/
 
   .quality{
-    margin-top: 32px;
     width: 100%;
-    height: 257px;
     background-image: url(../img/quality_320.png);
+    padding-top: 10px;
     padding-bottom: 41px;
     position: relative;
-  }
-
-  .quality h2 {
-    padding-top: 10px;
+    margin-bottom: 40px;
   }
 
   .quality-text {
@@ -1584,6 +1594,10 @@ h3 {
 
 
  /*блок ЧАСТЫЕ ВОПРОСЫ*/
+  
+  .faq {
+    padding-bottom: 40px;
+  }
 
   .faq-item {
     width: 84.3%;
@@ -1608,23 +1622,22 @@ h3 {
 
  /*конец блока ЧАСТЫЕ ВОПРОСЫ*/
 
- /*блок СВЯЗАТЬСЯ С НАМИ*/
+
+  /*блок СВЯЗАТЬСЯ С НАМИ*/
 
   .contact {
     margin-top: 0px;
     padding-bottom: 0px;
   }
 
-  .contact h2 {
-    padding-top: 34px;
-  }
-
   .contact-container {
     padding-bottom: 24px;
+    justify-content: space-evenly;
   }
 
   .contact-items {
     width: 100%;
+    max-width: 320px;
     display: flex;
     flex-wrap: wrap;
   }
@@ -1642,7 +1655,8 @@ h3 {
     width: 20%;
   }
 
-/*конец блока  СВЯЗАТЬСЯ С НАМИ*/
+/*конец блока  СВЯЗАТЬСЯ С НАМИ*/ 
+
 
 
 /* блок ПРИЛОЖЕНИЯ */
@@ -1658,7 +1672,7 @@ h3 {
   }
 
   .mockup {
-    width: 53.25%;
+    width: 57.25%;
   }
 
   .apps-container {
@@ -1715,7 +1729,7 @@ h3 {
 
   .footer {
     width: 100%;
-    height: 403px;
+    padding-bottom: 16px;
     background-image: url(../img/footer_bg_320.png);
     padding-top: 27px;
     text-align: center;
@@ -1796,7 +1810,16 @@ h3 {
     font-size: 1.25rem;
  }
  /*конец footer*/
+	
 }
+
+
+
+
+
+
+
+
 
 
 
