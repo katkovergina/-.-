@@ -45,11 +45,6 @@ h1 {
   letter-spacing: 3.75px;
 }
 
-h2 {
-  font-size: 2.25rem;
-  margin-bottom: 60px;
-}
-
 a {
 	color: #4E4141;
 	text-decoration: none;
@@ -69,14 +64,17 @@ button {
 }
 
 .nav {
-  max-width: 1140px;
+  width: 80%;
   margin-left: auto;
   margin-right: auto;
-  align-items: center;
   display: flex;
+  align-items: center;
+  justify-content: space-around;
   text-transform: uppercase;
   background: rgba(248, 243, 243, 0.4);
-  height: 90px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  
 }
 
 .hamb-menu {
@@ -105,22 +103,19 @@ button {
 }
 
 .menu-list {
-  justify-content: center;
+  width: 53%;
   display: flex;
+  justify-content: space-around;
   margin-left: auto;
   margin-right: auto;
-  font-size: 0.875rem;
-}
-
-.menu-list-item:nth-child(n+2)  {
-  margin-left: 2.813rem;
+  font-size: 0.75rem;
 }
 
 .accout {
 	display: flex;
 }
 
-.account-item:first-child{
+.account-item:first-child {
   margin-right: 1.063rem;
 }
 
@@ -150,7 +145,6 @@ button {
 
 .first {
   width: 100%;
-  /*margin-bottom: 150px;*/
   background-image: url(../img/milk_bg1_1440.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -251,6 +245,11 @@ button {
   padding-bottom: 172px;
 }
 
+.section-title {
+  font-size: 2.25rem;
+  margin-bottom: 60px;
+}
+
 .about-content {
   width: 58rem;
   display: flex;
@@ -258,8 +257,8 @@ button {
   margin-right: auto;
 }
 
-picture {
-   width: 60%;
+.pic-about-container {
+  width: 60%;
 }
 
 .pic-about {
@@ -292,7 +291,7 @@ picture {
   padding-bottom: 172px
 }
 
-.adv-list {
+.merits-list {
   margin-left: auto;
   margin-right: auto;
   display: flex;
@@ -300,43 +299,43 @@ picture {
   width: 80%;
 }
 
-.adv-list-item {
+.merits-list-item {
   width: 11.4rem;
 }
 
-.adv-list-item:first-child {
+.merits-list-item:first-child {
   margin-left: 40%;
   margin-right: 40%;
 }
 
-.adv-list-item:nth-child(2) {
+.merits-list-item:nth-child(2) {
   margin-left: 19.9%;
   margin-right: 25%;
 }
 
-.adv-list-item:nth-child(4) {
+.merits-list-item:nth-child(4) {
   margin-left: auto;
   margin-right: 23%;
 }
-.adv-list-item:nth-child(6) {
+.merits-list-item:nth-child(6) {
   margin-left: 23%;
   margin-right: auto;
 }
 
-.adv-pic-container {
+.merits-pic-container {
   display: flex;
   flex-direction: column;
   align-items: center;
 
 }
 
-.adv-pic {
+.merits-pic {
   width: 10.1rem;
   border-radius: 10px;
   
 }
 
-.adv-text {
+.merits-text {
   text-align: center;
   font-size: 1.25rem;
 }
@@ -349,8 +348,7 @@ picture {
 /*блок КАК ОФОРМИТЬ ПОДПИСКУ*/
 
 .how {
-  width: 100%;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.25);
   padding-bottom: 172px;
   padding-top: 54px;
 }
@@ -360,31 +358,31 @@ picture {
   margin-right: auto;
   display: flex;
   align-items: center;
-  width: 80%;
+  width: 100%;
+  justify-content: space-around;
 }
 
 .how-list_item {
-  width: 20%
-}
-
-.how-list_item:nth-child(n+2) {
-  margin-left: 10rem;
+  width: 16%
 }
 
 .how-list_item:nth-child(3) {
-  align-self: flex-start;
-  margin-top: 40px;
+  align-self: flex-end;
 }
 
 .how-list_item:nth-child(3) .how-text {
-  margin-top: 25px;
+  margin-top: 45px;
 } 
 
 .how-text {
-  width: 16rem;
+  margin-top: 7px;
   font-weight: bold;
   font-size: 1.42rem;
   text-align: center;
+}
+
+.how-pic {
+  max-width: 100%;
 }
 
 /*конец блока КАК ОФОРМИТЬ ПОДПИСКУ*/
@@ -537,8 +535,9 @@ picture {
  /*блок СВЯЗАТЬСЯ С НАМИ*/
 
 .contact {
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.25);
   padding-top: 54px;
+  padding-bottom: 170px;
 }
 
 .contact-container {
@@ -546,13 +545,15 @@ picture {
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 170px;
 }
 
 .contact-items {
   display: flex;
   justify-content: space-around;
-  width: 45%;
+}
+
+.contact-item:nth-child(n+2) {
+  margin-left: 70%;
 }
 
 .contact-link {
@@ -574,7 +575,7 @@ picture {
   position: relative;
 }
 
-h3 {
+.apps-title {
   font-weight: bold;
   font-size: 2.125rem;
   text-align: center;
@@ -681,7 +682,7 @@ h3 {
 .footer-content {
   display: flex;
   align-items: flex-start;
-  max-width: 1140px;
+  width: 80%;
   margin-left: auto;
   margin-right: auto;
   
@@ -697,10 +698,6 @@ h3 {
   width: 5.625rem
 }
 
-.footer-menu {
-  position: relative;
-  z-index: 2;
-}
 
 .footer-menu-list {
   display: flex;
@@ -760,11 +757,12 @@ h3 {
   margin-top: 9px;
 }
 
-
 .footer-menu {
+  position: relative;
+  z-index: 2;
+  font-size: 0.75rem;
   margin-left: 10%;
   font-weight: bold;
-  font-size: 0.875rem;
 }
 
 .footer-menu-item:nth-child(n+2) {
@@ -789,10 +787,10 @@ h3 {
 
 
 @media (min-width: 961px) and  (max-width: 1300px) {
-  
+
   /*блок ПРЕИМУЩЕСТВА*/
 
-  .adv-list {
+  .merits-list {
     margin-left: auto;
     margin-right: auto;
     display: flex;
@@ -800,19 +798,23 @@ h3 {
     width: 80%;
   }
 
-  .adv-list .adv-list-item {
+  .merits-list .merits-list-item {
     width: 11.4rem;
-    margin-left: 1%;
+    margin-left: 5%;
     margin-right: 5%;
     margin-bottom: 30px;
   }
 
-  .adv-pic {
+  .merits-list-item:nth-child(3n+3) {
+    margin-right: 0;
+  }
+
+  .merits-pic {
     width: 10.1rem;
     border-radius: 10px;
   }
 
-  .adv-text {
+  .merits-text {
     margin-top: 10px;
     text-align: center;
     font-size: 1.25rem;
@@ -823,38 +825,19 @@ h3 {
 
   /*блок КАК ОФОРМИТЬ ПОДПИСКУ*/
 
-  .how-list {
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    align-items: center;
-    width: 90%;
-  }
-
   .how-list_item {
     width: 20%
   }
 
-  .how-list_item:nth-child(n+2) {
-    margin-left: 13%;
-  }
-
-  .how-pic {
-    width: 12rem;
-  }
-
   .how-text {
-    width: 16rem;
-    font-weight: bold;
     font-size: 1.25rem;
-    text-align: center;
   }
 
   /*конец блока КАК ОФОРМИТЬ ПОДПИСКУ*/
 
   /* блок ПРИЛОЖЕНИЯ */
 
-  h3 {
+  .apps-title {
     font-size: 1.875rem;
   }
   
@@ -903,14 +886,10 @@ h3 {
     letter-spacing: 3.13px; 
   }
 
-  h2 {
-    font-size: 2.14rem;
-    margin-bottom: 40px;
-  }
-
   .nav {
     max-width: 727px;
-    height: 97px;
+    padding-top: 21px;
+    padding-bottom: 21px;
     justify-content: space-between;
   }
 
@@ -977,6 +956,11 @@ h3 {
     padding-bottom: 100px;
   }
 
+  .section-title {
+    font-size: 2.14rem;
+    margin-bottom: 40px;
+  }
+
   .about-content {
     width: 82%;
   }
@@ -1004,22 +988,26 @@ h3 {
     padding-bottom: 100px;
   }
 
-  .adv-list {
+  .merits-list {
     width: 80%;
   }
 
-  .adv-list .adv-list-item {
+  .merits-list .merits-list-item {
     width: 25%;
     margin-left: 3%;
     margin-right: 5%;
     margin-bottom: 46px;
   }
 
-  .adv-pic {
+  .merits-list-item:nth-child(3n+3) {
+    margin-right: 0;
+  }  
+
+  .merits-pic {
     width: 7rem;
   }
 
-  .adv-text {
+  .merits-text {
     margin-top: 17px;
     font-size: 1.14rem;
   }
@@ -1148,10 +1136,10 @@ h3 {
 
 
  /*блок ЧАСТЫЕ ВОПРОСЫ*/
+
   .faq {
     padding-bottom: 100px;
   }
-
 
   .faq-item {
     width: 71%;
@@ -1176,9 +1164,6 @@ h3 {
   .contact {
     margin-top: 49px;
     padding-bottom: 0;
-  }
-
-  .contact-container {
     padding-bottom: 100px;
   }
 
@@ -1187,7 +1172,7 @@ h3 {
 
 /* блок ПРИЛОЖЕНИЯ */
 
-  h3 {
+  .apps-title {
     font-size: 2rem;
   }
 
@@ -1310,14 +1295,10 @@ h3 {
     letter-spacing: 0.48px;
   }
 
-  h2 {
-    font-size: 1.66rem;
-    margin-bottom: 14px;
-  }
-
   .nav {
     max-width: 500px;
-    height: 67px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     justify-content: space-between;
   }
 
@@ -1407,6 +1388,11 @@ h3 {
     padding-bottom: 40px;
   }
 
+  .section-title {
+    font-size: 1.66rem;
+    margin-bottom: 14px;
+  }
+
   .about-content {
     width: 14.3rem;
   }
@@ -1415,8 +1401,8 @@ h3 {
     display: none; 
   }
 
-  picture {
-    width: 0;
+  .pic-about-container {
+    display: none;
   }
 
   .text-about {
@@ -1442,25 +1428,25 @@ h3 {
     padding-bottom: 40px;
   }
 
-  .adv-list {
+  .merits-list {
     width: 45.6%;
     flex-direction: column;
     margin-left: auto;
     margin-right: auto;
   }
 
-  .adv-list .adv-list-item {
+  .merits-list .merits-list-item {
     width: 100%;
     margin-left: 0;
     margin-right: 0;
     margin-bottom: 17px;
   }
 
-  .adv-pic {
+  .merits-pic {
     width: 7rem;
   }
 
-  .adv-text {
+  .merits-text {
     margin-top: 17px;
     font-size: 1.3rem;
   }
@@ -1556,7 +1542,6 @@ h3 {
     margin-right: 0;
   }
 
-
   .highligh-account {
     font-size: 1.33rem;
   }
@@ -1627,17 +1612,10 @@ h3 {
 
   .contact {
     margin-top: 0px;
-    padding-bottom: 0px;
-  }
-
-  .contact-container {
     padding-bottom: 24px;
-    justify-content: space-evenly;
   }
 
   .contact-items {
-    width: 100%;
-    max-width: 320px;
     display: flex;
     flex-wrap: wrap;
   }
@@ -1648,7 +1626,7 @@ h3 {
   }
 
   .contact-item:nth-child(2), .contact-item:nth-child(4) {
-    margin-left: 50%;
+    margin-left: 60%;
   }
 
   .contact-item {
@@ -1660,6 +1638,7 @@ h3 {
 
 
 /* блок ПРИЛОЖЕНИЯ */
+
   .apps {
     display: flex;
     flex-direction: column;
@@ -1667,7 +1646,7 @@ h3 {
     margin-bottom: 84px;
   }
 
-  h3 {
+  .apps-title {
     font-size: 1.5rem;
   }
 
@@ -1810,7 +1789,6 @@ h3 {
     font-size: 1.25rem;
  }
  /*конец footer*/
-	
 }
 
 
