@@ -39,12 +39,6 @@ h1, h2 {
   z-index: 999;
 }
 
-h1 {
-  font-size: 3.75rem;
-  line-height: 1.3;
-  letter-spacing: 3.75px;
-}
-
 a {
 	color: #4E4141;
 	text-decoration: none;
@@ -153,6 +147,12 @@ button {
   padding-bottom: 60px;
 }
 
+.main-healine {
+  font-size: 3.75rem;
+  line-height: 1.3;
+  letter-spacing: 3.75px;
+}
+
 .headline {
   margin-left: auto;
   margin-right: auto;
@@ -168,15 +168,18 @@ button {
   letter-spacing: 1.74px;
 }
 
-.headline-text {
-  font-size: 1.75rem;
+.headline-text-container {
   margin-left: auto;
   margin-right: auto;
   margin-top: 180px;
-  text-align: center;
   width: 62%; 
-  line-height: 1.3;
   min-width: 710px;
+}
+
+.headline-text {
+  font-size: 1.75rem;
+  line-height: 1.3;
+  text-align: center;
 }
 
 .social {
@@ -881,11 +884,6 @@ button {
     font-size: 14px;
   }
 
-  h1 {
-    font-size: 3.8rem;
-    letter-spacing: 3.13px; 
-  }
-
   .nav {
     max-width: 727px;
     padding-top: 21px;
@@ -929,6 +927,11 @@ button {
     background-image: url(../img/milk_bg1_834.png);
   } 
 
+  .main-healine {
+    font-size: 3.8rem;
+    letter-spacing: 3.13px; 
+  }
+
   .subtitle {
     margin-top: 5px;
     font-size: 1.85rem;
@@ -936,10 +939,12 @@ button {
     line-height: 1.2;
   }
 
+  .headline-text-container {
+    min-width: 607px;
+  }
+
   .headline-text {
     font-size: 1.7rem;
-    width: 95%;
-    min-width: 607px;
   }
 
   .socials-link {
@@ -1289,12 +1294,6 @@ button {
     font-size: 12px;
   }  
 
-  h1 {
-    font-size: 2rem;
-    line-height: 1.3;
-    letter-spacing: 0.48px;
-  }
-
   .nav {
     max-width: 500px;
     padding-top: 10px;
@@ -1349,6 +1348,12 @@ button {
     padding-bottom: 13px;
   }
 
+  .main-healine {
+    font-size: 2rem;
+    line-height: 1.3;
+    letter-spacing: 0.48px;
+  }
+
   .subtitle {
     margin-top: 2px;
     font-size: 1rem;
@@ -1356,12 +1361,15 @@ button {
     letter-spacing: 0.36px;
   }
 
+  .headline-text-container {
+    margin-top: 21px;
+    width: 40%;
+    min-width: 251px;
+  }
+
   .headline-text {
     font-size: 0.83rem;
-    margin-top: 21px;
-    width: 78.4%; 
     line-height: 1;
-    min-width: 251px;
   }
   
   .action-button-container {
